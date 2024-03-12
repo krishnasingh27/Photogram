@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:photogram/modules/room/view/room_screen.dart';
 import 'package:photogram/modules/splash/view/splash_screen.dart';
 
 void main() {
@@ -32,6 +33,6 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home: const SplashScreen());
+        home: const RoomMainScreen());
   }
 }
