@@ -1,8 +1,17 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:photogram/modules/profile/view/profile.dart';
 import 'package:photogram/modules/room/view/room_screen.dart';
 import 'package:photogram/modules/splash/view/splash_screen.dart';
 
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+      options: const FirebaseOptions(
+          apiKey: "AIzaSyDYWy1OjCX536er5BYHmYmE8xwjSguMexA",
+          appId: "1:885398336267:android:d291fe2db2b5e5a32da80e",
+          messagingSenderId: "",
+          projectId: "photogram-9f514"));
   runApp(const MyApp());
 }
 
